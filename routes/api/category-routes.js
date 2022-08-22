@@ -48,10 +48,10 @@ router.get('/:id', (req, res) => {
   // be sure to include its associated Products
 });
 
-// create a new category NOTE: MAY need to add 'products' to post new category doodad
+// create a new category
 router.post('/', (req, res) => {
   Category.create({
-    category_name: req.body.category_name //may need to add 'products' here
+    category_name: req.body.category_name
   })
   .then(dbProductData => res.json(dbProductData))
   .catch(err => {
