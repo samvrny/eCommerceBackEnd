@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
+//the api/categories endpoint 
+
 // find all categories
 router.get('/', (req, res) => {
   Category.findAll({
@@ -17,7 +19,6 @@ router.get('/', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
-  // be sure to include its associated Products
 });
 
 // find one category by its `id` value
@@ -45,7 +46,6 @@ router.get('/:id', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
-  // be sure to include its associated Products
 });
 
 // create a new category

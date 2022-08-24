@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
-// The `/api/tags` endpoint
+// The /api/tags endpoint
 
 // find all tags
 router.get('/', (req, res) => {
@@ -21,7 +21,6 @@ router.get('/', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   })
-  // be sure to include its associated Product data
 });
 
 // find a single tag by its `id`
@@ -51,7 +50,6 @@ router.get('/:id', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   })
-  // be sure to include its associated Product data
 });
 
 //create a new tag
