@@ -15,3 +15,4 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening to PORT ${PORT}!`))
 });
 
+//Dont forget to add your MySQL username and password to an .env file before starting! example provided at envexample.txt

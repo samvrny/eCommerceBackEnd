@@ -12,7 +12,7 @@ This app uses the sequelize, mysql2, dotenv, and express packages. Run npm insta
 
 Run npm start from the command line to start the server once the dependancies are installed. This application has no front end, so you will need to use a tool like Insomnia to test the routes in this application. Examples of the routes can be found in the demonstration video below, and the routes are all located in routes/api/ for reference.
 
-[Demonstration Video]()
+[Demonstration Video](https://drive.google.com/file/d/1ia299uzl8nvhM03hokPKNdNNxMnZNs1E/view?usp=sharing)
 
 ## Built With
 * Javascript
